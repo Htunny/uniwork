@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Uniwork</title>
+	<link rel="stylesheet" type="text/css" href="global.css" />
+</head>
+
+<body>
+
+  <header>
+		<div class="wrapper">
+			<a href="#"><img src="/public/uniwork.png" alt="Uniwork logo" title="Uniwork" /></a>
+
+			<span id="usernav"><a href="#">Logout</a> - <a href="#">Settings</a> - <a href="#">My Profile<span><img src="img/user_avatar_s.jpg" /></span></a></span>
+		</div>
+	</header>
+
+	<nav>
+		<ul id="n" class="clearfix">
+			<li><a href="#">Homepage</a></li>
+			<li class="sel"><a href="#">Profile</a></li>
+			<li><a href="#">Dashboard</a></li>
+			<li><a href="#">Values</a></li>
+			<li><a href="#">Skills</a></li>
+			<li><a href="#">Qualifications</a></li>
+      <li><a href="#">Portfolio</a></li>
+		</ul>
+	</nav>
+  <h1><%= full_name %></h1>
+
+  <p> <%= @user.birthday %> <p>
+  <p> <%= @user.address %> <p>
+  <p> <%= @user.tel %> <p>
+  <p> <%= @user.email %> <p>
+
+
+</body>
+</html>
